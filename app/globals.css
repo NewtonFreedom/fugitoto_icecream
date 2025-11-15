@@ -1,0 +1,140 @@
+/* app/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 统一链接样式（去掉默认紫色） */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Duck Island 品牌主题 ===== */
+:root {
+  /* Duck 品牌主色：你之前选的 duck 字色 */
+  --brand: #9C2E66;
+
+  /* 更深一点的背景色 */
+  --bg: #120714;
+  --bg-soft: #1B0B24;
+  --card-bg: #221029;
+
+  --border-soft: rgba(255, 255, 255, 0.08);
+}
+
+/* ===== 全局背景 + 字体颜色 ===== */
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at top, #2A1233 0, #120714 55%, #050208 100%);
+  color: var(--brand); /* 全站文字默认用 duck 颜色 */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+    "SF Pro Display", "Segoe UI", sans-serif;
+}
+
+/* 所有常见文字标签都用 duck 色，避免有黑字漏网 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+span,
+small,
+label {
+  color: var(--brand);
+}
+
+/* ===== 全部文字居中 ===== */
+main,
+section,
+.page-shell,
+.page-inner,
+.page-content {
+  text-align: center;
+}
+
+/* 卡片/区块内文字也保持居中 */
+.card,
+.hero,
+.popular-section,
+.find-store-section,
+.about-section {
+  text-align: center;
+}
+
+/* ===== 图片：圆角 + 居中 + 变小 ===== */
+
+/* 图片默认圆角，避免生硬 */
+img,
+.next-image-rounded img {
+  border-radius: 16px;
+}
+
+/* 所有内容区的图片都居中，并控制最大宽度，解决“超大图”问题 */
+main img,
+section img,
+.hero img,
+.popular-section img,
+.find-store-section img,
+.about-section img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: min(480px, 100%);  /* 最大宽度 480px，手机也自适应 */
+  height: auto;
+}
+
+/* 如果你在 Home 顶部那张大图上有 className="hero-image"，再缩小一点 */
+.hero-image {
+  max-width: min(420px, 100%);
+}
+
+/* Our Popular 页面：让四个口味卡片整体居中 */
+.popular-grid {
+  display: grid;
+  gap: 2.5rem;
+  justify-content: center;
+  align-items: start;
+  text-align: center;
+}
+
+/* 每一个口味卡片 */
+.popular-card {
+  text-align: center;
+}
+
+/* 让口味标题和描述之间的间距舒服一点 */
+.popular-card h3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+.popular-card p {
+  margin: 0.25rem 0;
+}
+
+/* ===== Scoop 装饰（如果你页面上有用到） ===== */
+.scoop {
+  width: 44px;
+  height: 44px;
+  border-radius: 9999px;
+  position: relative;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.95),
+    0 6px 14px rgba(0, 0, 0, 0.06);
+}
+.scoop::after {
+  content: "";
+  position: absolute;
+  inset: 6px;
+  border-radius: inherit;
+  border: 2px solid rgba(255, 255, 255, 0.9);
+}

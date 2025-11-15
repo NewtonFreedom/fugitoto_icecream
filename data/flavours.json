@@ -1,0 +1,27 @@
+[
+  {
+    "slug": "vanilla",
+    "name": "Vanilla",
+    "price": 5.0,
+    "tags": [
+      "popular"
+    ],
+    "description": "Classic vanilla made with real beans."
+  },
+  {
+    "slug": "chocolate",
+    "name": "Chocolate",
+    "price": 5.5,
+    "tags": [
+      "popular"
+    ],
+    "description": "Rich cocoa blend with a smooth finish."
+  },
+  {
+    "slug": "strawberry",
+    "name": "Strawberry",
+    "price": 5.0,
+    "tags": [],
+    "description": "Fresh and fruity, made with real berries."
+  }
+]
