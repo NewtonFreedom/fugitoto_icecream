@@ -47,7 +47,7 @@ export default function Footer() {
         </div>
 
         <div className="pb-10 text-center text-sm text-gray-500">
-          c {new Date().getFullYear()} Ice Cream Demo. All rights reserved.
+          © {new Date().getFullYear()} Ice Cream Demo. All rights reserved.
         </div>
       </Container>
     </footer>

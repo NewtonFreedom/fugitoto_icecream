@@ -16,12 +16,12 @@ export default function StorePage() {
         <SectionTitle>Find a Store</SectionTitle>
         <p className="mt-2 text-gray-600">Two scoops away from you.</p>
 
-        {/* ??(???????) */}
+        {/* 地图（客户端组件渲染） */}
         <div className="mt-6">
           <MapClient stores={stores} />
         </div>
 
-        {/* ???? */}
+        {/* 门店列表 */}
         <ul className="mt-6 grid gap-4 sm:grid-cols-2">
           {stores.map((s) => (
             <li key={s.name} className="rounded-xl border bg-white/70 p-4 backdrop-blur">
