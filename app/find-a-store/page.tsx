@@ -1,8 +1,8 @@
 import Container from "@/components/Container";
 import SectionTitle from "@/components/SectionTitle";
-import MapClient from "./MapClient";
+import MapClient, { type Store } from "./MapClient";
 
-const stores = [
+const stores: Store[] = [
   { name: "Ponsonby", addr: "123 Jervois Rd, Auckland", latlng: [-36.8477, 174.7369] },
   { name: "Newmarket", addr: "45 Broadway, Auckland", latlng: [-36.8690, 174.7790] },
 ];
@@ -16,12 +16,12 @@ export default function StorePage() {
         <SectionTitle>Find a Store</SectionTitle>
         <p className="mt-2 text-gray-600">Two scoops away from you.</p>
 
-        {/* 地图（客户端组件渲染） */}
+        {/* ??(???????) */}
         <div className="mt-6">
           <MapClient stores={stores} />
         </div>
 
-        {/* 门店列表 */}
+        {/* ???? */}
         <ul className="mt-6 grid gap-4 sm:grid-cols-2">
           {stores.map((s) => (
             <li key={s.name} className="rounded-xl border bg-white/70 p-4 backdrop-blur">
