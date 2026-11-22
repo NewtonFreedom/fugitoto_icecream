@@ -15,7 +15,7 @@ export default function Footer() {
         <div className="grid gap-8 py-10 lg:grid-cols-3">
           <div className="lg:col-span-1">
             <Link href="/home" className="flex items-center space-x-2 text-xl font-semibold">
-              <img src="/logo.svg" alt="logo" className="w-8 h-8" />
+              <img src="/Logo.svg" alt="Ice Cream Demo" className="w-8 h-8" />
               <span>Ice Cream Demo</span>
             </Link>
             <p className="mt-3 text-gray-500">

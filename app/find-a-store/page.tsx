@@ -1,8 +1,8 @@
 import Container from "@/components/Container";
 import SectionTitle from "@/components/SectionTitle";
-import MapClient from "./MapClient";
+import MapClient, { type Store } from "./MapClient";
 
-const stores = [
+const stores: Store[] = [
   { name: "Ponsonby", addr: "123 Jervois Rd, Auckland", latlng: [-36.8477, 174.7369] },
   { name: "Newmarket", addr: "45 Broadway, Auckland", latlng: [-36.8690, 174.7790] },
 ];

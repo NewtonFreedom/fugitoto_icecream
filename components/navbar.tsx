@@ -16,7 +16,7 @@ export default function Navbar() {
         <nav className="py-6">
           {/* 可以保留 Logo；需要时换成你的图/文字 */}
           <Link href="/home" className="mb-3 flex items-center gap-2 text-xl font-semibold">
-            <img src="/logo.svg" alt="logo" className="h-8 w-8" />
+            <img src="/Logo.svg" alt="Ice Cream Demo" className="h-8 w-8" />
             <span>Ice Cream Demo</span>
           </Link>
 
